@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="watch" id="watch">
+    
+    <div class="screen" id="screen">
+
+        <!-- CLOCK -->
+        <div id="time" class="time"></div>
+
+        <!-- HEART RATE -->
+        <div class="panel" id="heartPanel">
+            <h3>❤️ Heart Rate</h3>
+            <p id="bpm">-- BPM</p>
+        </div>
+
+        <!-- STEPS -->
+        <div class="panel" id="stepsPanel">
+            <h3>👟 Step Counter</h3>
+            <p id="steps">0 steps</p>
+            <button id="addStepBtn">Add Step</button>
+        </div>
+
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="controls">
+        <button onclick="showClock()">Home</button>
+        <button onclick="showSteps()">Steps</button>
+        <button onclick="showHeart()">Heart</button>
+        <button onclick="toggleTheme()">Theme</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
